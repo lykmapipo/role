@@ -8,7 +8,7 @@ An entity that defines how a party(ies) acts or, in other words, what roles the 
 
 It defines set of permissions(or access rights) that are applicable to to a specific party(ies).
 
-[Demo](https://role.herokuapp.com/v1/roles)
+[Demo](https://rolle.herokuapp.com/v1/roles)
 
 ## Requirements
 
@@ -39,7 +39,7 @@ app.start((error, env) => {
 ```
 
 ## Demo
-[View Demo](https://role.herokuapp.com/v1/roles)
+[View Demo](https://rolle.herokuapp.com/v1/roles)
 [View apidoc](https://lykmapipo.github.io/role/)
 
 ## Testing
