@@ -1,0 +1,27 @@
+{
+  "name": "role",
+  "description": "An entity that defines how a party(ies) acts or, in other words, what roles the party(ies) plays in specific context or environment.",
+  "repository": "https://github.com/lykmapipo/role.git",
+  "keywords": [
+    "lykmapipo",
+    "mongoose",
+    "role",
+    "rights",
+    "control",
+    "rbac"
+  ],
+  "addons": [
+    "mongolab"
+  ],
+  "env":
+  {
+    "NPM_CONFIG_PRODUCTION":
+    {
+      "value": "false"
+    },
+    "YARN_PRODUCTION":
+    {
+      "value": "false"
+    }
+  }
+}
