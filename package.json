@@ -1,6 +1,6 @@
 {
   "name": "@lykmapipo/role",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An entity that defines how a party(ies) acts or, in other words, what roles the party(ies) plays in specific context or environment.",
   "main": "index.js",
   "scripts": {
