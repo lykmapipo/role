@@ -4,61 +4,74 @@
 /* dependencies */
 const path = require('path');
 const { expect } = require('chai');
+const { Schema } = require('mongoose');
+const { Permission } = require('@lykmapipo/permission');
 const Role = require(path.join(__dirname, '..', '..', 'lib', 'role.model'));
 
 
 describe('Role Schema', () => {
 
+  it('should have type field', () => {
+    const type = Role.path('type');
+
+    expect(type).to.exist;
+    expect(type).to.be.instanceof(Schema.Types.String);
+    expect(type.options).to.exist;
+    expect(type.options).to.be.an('object');
+    expect(type.options.type).to.exist;
+    expect(type.options.trim).to.be.true;
+    expect(type.options.enum).to.exist;
+    expect(type.options.index).to.be.true;
+    expect(type.options.searchable).to.be.true;
+    expect(type.options.fake).to.exist;
+  });
+
   it('should have name field', () => {
+    const name = Role.path('name');
 
-    const name = Role.schema.tree.name;
-    const instance = Role.schema.paths.name.instance;
-
-    expect(instance).to.be.equal('String');
     expect(name).to.exist;
-    expect(name).to.be.an('object');
-    expect(name.type).to.be.a('function');
-    expect(name.type.name).to.be.equal('String');
-    expect(name.required).to.be.true;
-    expect(name.trim).to.be.true;
-    expect(name.searchable).to.be.true;
-    expect(name.index).to.be.true;
-    expect(name.unique).to.be.true;
-
+    expect(name).to.be.instanceof(Schema.Types.String);
+    expect(name.options).to.exist;
+    expect(name.options).to.be.an('object');
+    expect(name.options.type).to.exist;
+    expect(name.options.required).to.be.true;
+    expect(name.options.trim).to.be.true;
+    expect(name.options.minlength).to.be.equal(1);
+    expect(name.options.index).to.be.true;
+    expect(name.options.unique).to.be.true;
+    expect(name.options.searchable).to.be.true;
+    expect(name.options.fake).to.exist;
   });
 
 
   it('should have description field', () => {
+    const description = Role.path('description');
 
-    const description = Role.schema.tree.description;
-    const instance = Role.schema.paths.description.instance;
-
-    expect(instance).to.be.equal('String');
     expect(description).to.exist;
-    expect(description).to.be.an('object');
-    expect(description.type).to.be.a('function');
-    expect(description.type.name).to.be.equal('String');
-    expect(description.trim).to.be.true;
-    expect(description.searchable).to.be.true;
-    expect(description.index).to.be.true;
-
+    expect(description).to.be.instanceof(Schema.Types.String);
+    expect(description.options).to.exist;
+    expect(description.options).to.be.an('object');
+    expect(description.options.type).to.exist;
+    expect(description.options.trim).to.be.true;
+    expect(description.options.index).to.be.true;
+    expect(description.options.searchable).to.be.true;
+    expect(description.options.fake).to.exist;
   });
 
   it('should have permissions field', () => {
 
-    const permissions = Role.schema.tree.permissions;
-    const instance = Role.schema.paths.permissions.instance;
+    const permissions = Role.path('permissions');
 
-    expect(instance).to.be.equal('Array');
     expect(permissions).to.exist;
-    expect(permissions).to.be.an('object');
-    expect(permissions.type[0]).to.be.a('function');
-    expect(permissions.type[0].name).to.be.equal('ObjectId');
-    expect(permissions.ref).to.exist;
-    expect(permissions.ref).to.be.equal('Permission');
-    expect(permissions.exists).to.be.true;
-    expect(permissions.index).to.be.true;
-
+    expect(permissions).to.be.instanceof(Schema.Types.Array);
+    expect(permissions.options).to.exist;
+    expect(permissions.options).to.be.an('object');
+    expect(permissions.options.type).to.exist;
+    expect(permissions.options.ref).to.exist;
+    expect(permissions.options.ref).to.be.equal(Permission.MODEL_NAME);
+    expect(permissions.options.default).to.be.undefined;
+    expect(permissions.options.index).to.be.true;
+    expect(permissions.options.autopopulate).to.be.true;
   });
 
 });

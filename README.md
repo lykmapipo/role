@@ -4,7 +4,7 @@
 [![Dependencies Status](https://david-dm.org/lykmapipo/role/status.svg?style=flat-square)](https://david-dm.org/lykmapipo/role)
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/lykmapipo/role/tree/master)
 
-An entity that defines how a party(ies) acts or, in other words, what roles the party(ies) plays in specific context or environment. 
+A representation on how a party(ies) acts or, in other words, what roles the party(ies) plays in specific context or environment.
 
 It defines set of permissions(or access rights) that are applicable to to a specific party(ies).
 

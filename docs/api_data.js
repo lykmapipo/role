@@ -11,7 +11,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles/:id"
+        "url": "https://rolle.herokuapp.com/v1/roles/:id"
       }
     ],
     "header": {
@@ -156,7 +156,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles/:id"
+        "url": "https://rolle.herokuapp.com/v1/roles/:id"
       }
     ],
     "header": {
@@ -295,7 +295,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles/schema"
+        "url": "https://rolle.herokuapp.com/v1/roles/schema"
       }
     ],
     "header": {
@@ -340,7 +340,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles"
+        "url": "https://rolle.herokuapp.com/v1/roles"
       }
     ],
     "header": {
@@ -541,7 +541,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles/:id"
+        "url": "https://rolle.herokuapp.com/v1/roles/:id"
       }
     ],
     "header": {
@@ -686,7 +686,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles"
+        "url": "https://rolle.herokuapp.com/v1/roles"
       }
     ],
     "header": {
@@ -831,7 +831,7 @@ define({ "api": [
     "groupTitle": "",
     "sampleRequest": [
       {
-        "url": "https://role.herokuapp.com/v1/roles/:id"
+        "url": "https://rolle.herokuapp.com/v1/roles/:id"
       }
     ],
     "header": {

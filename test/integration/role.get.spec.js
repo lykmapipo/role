@@ -3,8 +3,6 @@
 
 /* dependencies */
 const path = require('path');
-const _ = require('lodash');
-const async = require('async');
 const { expect } = require('chai');
 const { Role } = require(path.join(__dirname, '..', '..'));
 
@@ -14,16 +12,10 @@ describe('Role Get', () => {
     Role.deleteMany(done);
   });
 
-  let roles = Role.fake(10);
+  let roles = ['IT Officer', 'Billing Officer', 'Human Resource'];
 
   before((done) => {
-    roles = _.map(roles, (role) => {
-      return (next) => {
-        role.post(next);
-      };
-    });
-
-    async.parallel(roles, (error, created) => {
+    roles = Role.seed((error, created) => {
       roles = created;
       done(error, created);
     });
@@ -35,9 +27,9 @@ describe('Role Get', () => {
       expect(error).to.not.exist;
       expect(results).to.exist;
       expect(results.data).to.exist;
-      expect(results.data).to.have.length(10);
+      expect(results.data).to.have.length.at.least(1);
       expect(results.total).to.exist;
-      expect(results.total).to.be.equal(10);
+      expect(results.total).to.be.at.least(1);
       expect(results.limit).to.exist;
       expect(results.limit).to.be.equal(10);
       expect(results.skip).to.exist;
@@ -57,9 +49,9 @@ describe('Role Get', () => {
       expect(error).to.not.exist;
       expect(results).to.exist;
       expect(results.data).to.exist;
-      expect(results.data).to.have.length(10);
+      expect(results.data).to.have.length.at.least(1);
       expect(results.total).to.exist;
-      expect(results.total).to.be.equal(10);
+      expect(results.total).to.be.at.least(1);
       expect(results.limit).to.exist;
       expect(results.limit).to.be.equal(20);
       expect(results.skip).to.exist;

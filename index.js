@@ -16,7 +16,7 @@
  * @version 0.1.0
  * @example
  *
- * const { app } = require('@lykmapipo/permission');
+ * const { app } = require('@lykmapipo/role');
  * app.start();
  *
  */

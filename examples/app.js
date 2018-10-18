@@ -36,7 +36,7 @@ function boot() {
     },
 
     function seedRole(next) {
-      const roles = Role.fake(15);
+      const roles = ['IT Officer', 'Billing Officer', 'Human Resource'];
       Role.seed(roles, next);
     }
 
