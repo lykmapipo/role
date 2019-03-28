@@ -11,8 +11,7 @@ const path = require('path');
 const _ = require('lodash');
 const async = require('async');
 const mongoose = require('mongoose');
-const { env } = require('@codetanzania/majifix-common');
-const { getStrings } = env;
+const { getStrings } = require('@lykmapipo/env');
 const {
   Role,
   roleRouter,
