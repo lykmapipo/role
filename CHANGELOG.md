@@ -1,3 +1,13 @@
+#### 0.3.1 (2019-04-16)
+
+##### Chores
+
+*  force latest dependencies ([4265aa9f](https://github.com/lykmapipo/role/commit/4265aa9f92f68d72379af7903920255fa7070af4))
+
+##### Documentation Changes
+
+*  add code of conduct & contributing guide ([eeaa28c6](https://github.com/lykmapipo/role/commit/eeaa28c682963c5e60fad2fbc007a69c21715217))
+
 #### 0.3.0 (2019-03-28)
 
 ##### Refactors
