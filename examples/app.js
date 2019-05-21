@@ -11,6 +11,7 @@ const path = require('path');
 const _ = require('lodash');
 const async = require('async');
 const mongoose = require('mongoose');
+const { start } = require('@lykmapipo/express-common');
 const { getStrings } = require('@lykmapipo/env');
 const {
   Role,
@@ -48,7 +49,7 @@ function boot() {
     });
 
     /* fire the app */
-    app.start(function (error, env) {
+    start(function (error, env) {
       console.log(`visit http://0.0.0.0:${env.PORT}`);
     });
 
