@@ -73,15 +73,15 @@
     "supertest": "^4.0.2"
   },
   "peerDependencies": {
-    "mongoose": ">=5.5.14"
+    "mongoose": ">=5.6.0"
   },
   "dependencies": {
-    "@lykmapipo/env": ">=0.8.1",
-    "@lykmapipo/express-common": ">=0.17.6",
-    "@lykmapipo/permission": ">=0.8.3",
+    "@lykmapipo/env": ">=0.9.1",
+    "@lykmapipo/express-common": ">=0.17.8",
+    "@lykmapipo/permission": ">=0.8.4",
     "async": ">=3.0.1",
     "lodash": ">=4.17.11",
-    "mongoose-rest-actions": ">=0.28.4"
+    "mongoose-rest-actions": ">=0.28.5"
   },
   "engines": {
     "node": ">=8.11.1",
