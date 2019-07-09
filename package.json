@@ -67,21 +67,22 @@
     "jshint-stylish": "^2.2.1",
     "mocha": "^6.1.4",
     "mongoose": "^5.4.20",
+    "shelljs": "^0.8.3",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0",
     "sinon-mongoose": "^2.3.0",
     "supertest": "^4.0.2"
   },
   "peerDependencies": {
-    "mongoose": ">=5.6.0"
+    "mongoose": ">=5.6.4"
   },
   "dependencies": {
-    "@lykmapipo/env": ">=0.9.1",
-    "@lykmapipo/express-common": ">=0.17.8",
-    "@lykmapipo/permission": ">=0.8.4",
-    "async": ">=3.0.1",
+    "@lykmapipo/env": ">=0.9.5",
+    "@lykmapipo/express-common": ">=0.17.9",
+    "@lykmapipo/permission": ">=0.8.5",
+    "async": ">=3.1.0",
     "lodash": ">=4.17.11",
-    "mongoose-rest-actions": ">=0.28.5"
+    "mongoose-rest-actions": ">=0.28.6"
   },
   "engines": {
     "node": ">=8.11.1",
