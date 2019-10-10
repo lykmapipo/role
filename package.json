@@ -63,11 +63,11 @@
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-mocha-test": "^0.13.3",
-    "handlebars": "^4.3.3",
+    "handlebars": "^4.4.3",
     "jshint-stylish": "^2.2.1",
     "lodash.template": "^4.5.0",
-    "mocha": "^6.2.0",
-    "mongoose": ">=5.7.1",
+    "mocha": "^6.2.1",
+    "mongoose": ">=5.7.4",
     "shelljs": "^0.8.3",
     "sinon": "^7.5.0",
     "sinon-chai": "^3.3.0",
@@ -75,15 +75,15 @@
     "supertest": "^4.0.2"
   },
   "peerDependencies": {
-    "mongoose": ">=5.7.1"
+    "mongoose": ">=5.7.4"
   },
   "dependencies": {
-    "@lykmapipo/env": ">=0.14.2",
-    "@lykmapipo/express-common": ">=0.17.12",
-    "@lykmapipo/permission": ">=0.8.10",
+    "@lykmapipo/env": ">=0.14.6",
+    "@lykmapipo/express-common": ">=0.17.13",
+    "@lykmapipo/permission": ">=0.8.11",
     "async": ">=3.1.0",
     "lodash": ">=4.17.15",
-    "mongoose-rest-actions": ">=0.29.1"
+    "mongoose-rest-actions": ">=0.29.4"
   },
   "engines": {
     "node": ">=8.11.1",
