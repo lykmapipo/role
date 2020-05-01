@@ -2,9 +2,8 @@
 
 
 /* dependencies */
-const path = require('path');
-const { expect } = require('chai');
-const { Role } = require(path.join(__dirname, '..', '..'));
+const { expect } = require('@lykmapipo/mongoose-test-helpers');
+const { Role } = require('../..');
 
 describe('Role Post', () => {
 

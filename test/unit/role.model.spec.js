@@ -2,9 +2,8 @@
 
 
 /* dependencies */
-const path = require('path');
-const { expect } = require('chai');
-const Role = require(path.join(__dirname, '..', '..', 'lib', 'role.model'));
+const { expect } = require('@lykmapipo/mongoose-test-helpers');
+const Role = require('../../lib/role.model');
 
 
 describe('Role Instance', () => {

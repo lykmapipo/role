@@ -2,11 +2,10 @@
 
 
 /* dependencies */
-const path = require('path');
-const { expect } = require('chai');
+const { expect } = require('@lykmapipo/mongoose-test-helpers');
 const { Schema } = require('mongoose');
 const { Permission } = require('@lykmapipo/permission');
-const Role = require(path.join(__dirname, '..', '..', 'lib', 'role.model'));
+const Role = require('../../lib/role.model');
 
 
 describe('Role Schema', () => {
