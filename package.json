@@ -80,7 +80,7 @@
   "dependencies": {
     "@lykmapipo/env": ">=0.17.3",
     "@lykmapipo/express-common": ">=0.18.2",
-    "@lykmapipo/permission": ">=0.8.24",
+    "@lykmapipo/permission": ">=0.8.25",
     "async": ">=3.2.0",
     "lodash": ">=4.17.15",
     "mongoose-rest-actions": ">=0.29.21"
