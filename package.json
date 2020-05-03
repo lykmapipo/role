@@ -57,7 +57,7 @@
     "@benmaruchu/faker": "^4.3.0",
     "@codetanzania/majifix-common": "^0.19.1",
     "@lykmapipo/express-test-helpers": "^0.9.2",
-    "@lykmapipo/mongoose-test-helpers": "^0.7.44",
+    "@lykmapipo/mongoose-test-helpers": "^0.7.45",
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "grunt": "^1.1.0",
@@ -78,12 +78,12 @@
     "mongoose": ">=5.9.11"
   },
   "dependencies": {
-    "@lykmapipo/env": ">=0.17.3",
+    "@lykmapipo/env": ">=0.17.4",
     "@lykmapipo/express-common": ">=0.18.2",
-    "@lykmapipo/permission": ">=0.8.25",
+    "@lykmapipo/permission": ">=0.8.26",
     "async": ">=3.2.0",
     "lodash": ">=4.17.15",
-    "mongoose-rest-actions": ">=0.29.21"
+    "mongoose-rest-actions": ">=0.29.22"
   },
   "engines": {
     "node": ">=8.11.1",
