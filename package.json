@@ -56,8 +56,8 @@
   "devDependencies": {
     "@benmaruchu/faker": "^4.3.0",
     "@codetanzania/majifix-common": "^0.19.1",
-    "@lykmapipo/express-test-helpers": "^0.9.9",
-    "@lykmapipo/mongoose-test-helpers": "^0.8.2",
+    "@lykmapipo/express-test-helpers": "^0.9.11",
+    "@lykmapipo/mongoose-test-helpers": "^0.8.3",
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "grunt": "^1.2.1",
@@ -69,21 +69,21 @@
     "jshint-stylish": "^2.2.1",
     "lodash.template": "^4.5.0",
     "mocha": "^8.0.1",
-    "mongoose": ">=5.9.24",
+    "mongoose": ">=5.9.26",
     "shelljs": "^0.8.4",
     "sinon": "^9.0.2",
     "supertest": "^4.0.2"
   },
   "peerDependencies": {
-    "mongoose": ">=5.9.24"
+    "mongoose": ">=5.9.26"
   },
   "dependencies": {
-    "@lykmapipo/env": ">=0.17.13",
-    "@lykmapipo/express-common": ">=0.18.9",
-    "@lykmapipo/permission": ">=0.8.32",
+    "@lykmapipo/env": ">=0.17.15",
+    "@lykmapipo/express-common": ">=0.18.11",
+    "@lykmapipo/permission": ">=0.8.33",
     "async": ">=3.2.0",
     "lodash": ">=4.17.19",
-    "mongoose-rest-actions": ">=0.30.4"
+    "mongoose-rest-actions": ">=0.30.5"
   },
   "engines": {
     "node": ">=8.11.1",
